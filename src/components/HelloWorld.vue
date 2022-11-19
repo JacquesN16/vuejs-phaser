@@ -44,7 +44,7 @@ const create_animate = (anims, sprite,key,start,end) => {
 });
 }
 
-   
+
 function preload () {
   this.load.image('sky',bg)
   this.load.spritesheet('cat',cat,{ frameWidth: 48, frameHeight: 48 })
@@ -55,11 +55,11 @@ function create () {
 
 
   cursors = this.input.keyboard.createCursorKeys()
-  this.add.image(0,0,'sky').setOrigin(0, 0)
 
-  
+
+
   // ball_sprite = this.physics.add.image(50,50,ball_sprite_name)
-  ball_sprite.setCollideWorldBounds(true)
+  // ball_sprite.setCollideWorldBounds(true)
   blue_cat = this.physics.add.sprite(20,20,blue_cat_sprite)
   blue_cat.setCollideWorldBounds(true);
 
@@ -92,7 +92,7 @@ function update (){
     blue_cat.anims.play('stay',true);
   }
 
- 
+
 
 }
 
